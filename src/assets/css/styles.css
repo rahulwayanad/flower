@@ -1037,32 +1037,127 @@ textarea { resize: vertical; min-height: 85px; }
 }
 
 @media (max-width: 700px) {
+  .container { width: 92%; }
+  .circles-slider-wrap { width: 92%; }
+
   .search-wrap { order: 3; flex-basis: 100%; }
   .header__inner { flex-wrap: wrap; }
   .burger { display: flex; }
   .logo__tagline { display: none; }
   .topbar__group { gap: .9rem; }
+  .topbar__group .topbar__item:nth-child(n+2) { display: none; }
+  .topbar__accent { display: none; }
+  .cursor-toggle { display: none; }
   .catnav { display: none; }
-  .catnav.catnav--open { display: block; }
+  .catnav.catnav--open {
+    display: block;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
+  .catnav.catnav--open .catnav__list {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: visible;
+  }
+  .catnav.catnav--open .catnav__list > li > a {
+    padding: .9rem 1.2rem;
+    font-size: .92rem;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    justify-content: space-between;
+  }
+  /* Inline dropdowns — no floating */
+  .catnav.catnav--open .has-drop { position: static; }
+  .catnav.catnav--open .dropdown {
+    position: static;
+    transform: none;
+    min-width: 0;
+    width: 100%;
+    padding: .3rem 0 .6rem;
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid rgba(255,255,255,.07);
+    box-shadow: none;
+    background: rgba(0,0,0,.25);
+    flex-direction: column;
+    gap: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: none;
+  }
+  .catnav.catnav--open .has-drop.open > .dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+  }
+  /* Block hover-triggered dropdown on mobile */
+  .catnav.catnav--open .has-drop:hover > .dropdown {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: none;
+  }
+  .catnav.catnav--open .has-drop.open:hover > .dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .catnav.catnav--open .drop-col { width: 100%; }
+  .catnav.catnav--open .drop-col li a {
+    color: rgba(255,255,255,.72);
+    font-size: .82rem;
+    padding: .45rem 2rem;
+    border-bottom: none;
+    white-space: normal;
+    line-height: 1.4;
+  }
+  .catnav.catnav--open .drop-col li a:hover { background: rgba(255,255,255,.06); }
 
-  .hero { min-height: 220px; }
-  .hero__inner { padding-block: 2rem; }
+  .hero { min-height: 200px; }
+  .hero__inner { padding-block: 1.5rem; }
 
-  .pgrid { grid-template-columns: repeat(2, 1fr); }
-  .pgrid--4 { grid-template-columns: repeat(2, 1fr); }
+  .pgrid { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+  .pgrid--4 { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+
+  /* Product card: reveal touch-inaccessible hover elements */
+  .pcard__cart-overlay { opacity: 1; transform: translateY(0); font-size: .65rem; padding: .45rem .4rem; }
+  .pcard__arr { opacity: 1; width: 22px; height: 22px; }
+  .pcard__actions { opacity: 1; transform: none; }
+  .pcard__dots { opacity: 1; }
+  .pcard__action-btn { width: 26px; height: 26px; }
+
   .blogs-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
   .promo-card { flex-direction: column; text-align: center; }
   .promo-card__img { width: 100%; }
+
+  /* Touch-friendly tap targets */
+  .hicon { padding: .55rem .6rem; }
+  .circles-arrow { width: 30px; height: 30px; }
+  .btn-hero { padding: .6rem 1.6rem; }
 }
 
 @media (max-width: 480px) {
+  .container { width: 95%; }
+  .circles-slider-wrap { width: 95%; }
+
   .bform__row { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .trust-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .topbar__item--right { display: none; }
+
+  .pgrid { gap: .5rem; }
+  .pgrid--4 { gap: .5rem; }
+  .pcard__body { padding: .5rem .15rem .3rem; }
+  .occ-text-row a { padding: .3rem .7rem; font-size: .8rem; }
+
+  .circle-item { min-width: 70px; }
+  .circle-img { width: 68px; height: 68px; }
+  .circle-item span { font-size: .62rem; max-width: 68px; }
 }
 
 /* ══════════════════════════════════════════

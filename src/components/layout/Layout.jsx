@@ -16,7 +16,7 @@ export default function Layout() {
     <>
       <Topbar cursorEnabled={isEnabled} onCursorToggle={toggle} />
       <Header navOpen={navOpen} onNavToggle={() => setNavOpen(v => !v)} />
-      <Nav open={navOpen} />
+      <Nav open={navOpen} onClose={() => setNavOpen(false)} />
       <Outlet />
       <Footer />
       <AuthModal />

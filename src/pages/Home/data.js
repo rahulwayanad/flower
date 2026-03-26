@@ -35,7 +35,7 @@ export const EID_PRODUCTS = [
 
 export const MOTHERS_PRODUCTS = [
   { id:7,  name:'Blush Pink Garden Arrangement',       price:'AED 249.00', imgBg:'linear-gradient(160deg,#fef0fa,#ffc8ed)', images:['https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=300&h=300&fit=crop', p2(0)] },
-  { id:8,  name:'Pink & White Luxury Bouquet',         price:'AED 375.00', imgBg:'linear-gradient(160deg,#fff5f8,#ffd6e8)', images:['https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=300&h=300&fit=crop', p2(1)] },
+  { id:8,  name:'Pink & White Luxury Bouquet',         price:'AED 375.00', imgBg:'linear-gradient(160deg,#fff5f8,#ffd6e8)', images:['https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=300&h=300&fit=crop', p2(1)] },
   { id:9,  name:'Pastel Bloom Surprise Flower Box',    price:'AED 199.00', imgBg:'linear-gradient(160deg,#fffbec,#ffedc0)', images:['https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=300&h=300&fit=crop', p2(2)] },
   { id:10, name:'Sweetness White Yellow and Pink',     price:'AED 289.00', imgBg:'linear-gradient(160deg,#edfff6,#b8f0d4)', images:['https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=300&h=300&fit=crop', p2(3)] },
   { id:11, name:'Tulip Fantasy Flower Arrangement',    price:'AED 329.00', imgBg:'linear-gradient(160deg,#f6eeff,#d8b4ff)', images:['https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=300&h=300&fit=crop', p2(4)] },
@@ -54,7 +54,7 @@ export const BEST_SELLERS = [
 export const BIRTHDAY_PRODUCTS = [
   { id:19, name:'Love Truck & Money Bouquet',             price:'AED 499.00 – AED 699.00', imgBg:'linear-gradient(160deg,#fff0f5,#ffc8dc)', images:['https://images.unsplash.com/photo-1546015720-b8b30df5aa27?w=300&h=300&fit=crop', p2(0)] },
   { id:20, name:'Cotton Candy Bloom Flower Box',          price:'AED 259.00',              imgBg:'linear-gradient(160deg,#e8f4ff,#b8d8ff)', images:['https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?w=300&h=300&fit=crop', p2(1)] },
-  { id:21, name:'12 Red Roses Birthday Arrangement',      price:'AED 149.00',              imgBg:'linear-gradient(160deg,#fff8ec,#ffecc0)', images:['https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?w=300&h=300&fit=crop', p2(2)] },
+  { id:21, name:'12 Red Roses Birthday Arrangement',      price:'AED 149.00',              imgBg:'linear-gradient(160deg,#fff8ec,#ffecc0)', images:['https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=300&h=300&fit=crop', p2(2)] },
   { id:22, name:'Multi Colourful Flower Arrangement',     price:'AED 229.00',              imgBg:'linear-gradient(160deg,#fef0fa,#f8c0ef)', images:['https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=300&h=300&fit=crop', p2(3)] },
   { id:23, name:'Pink Basket of Roses Pink Flowers',      price:'AED 349.00',              imgBg:'linear-gradient(160deg,#edfff6,#b0f0d4)', images:['https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=300&h=300&fit=crop', p2(4)] },
   { id:24, name:'Fresh Birthday Floral Box',              price:'AED 199.00',              imgBg:'linear-gradient(160deg,#f5eeff,#d0a8ff)', images:['https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=300&h=300&fit=crop', p2(5)] },
@@ -66,16 +66,16 @@ export const NEWBORN_BOY = [
   { id:27, name:'Baby Boy Lovely Child Flower & Ballo…',   price:'AED 239.00', imgBg:'linear-gradient(160deg,#e4f0ff,#c0d8ff)', images:['https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=300&h=300&fit=crop', p2(2)] },
   { id:28, name:'Baby Boy Flower & Balloon Bouquet',        price:'AED 199.00', imgBg:'linear-gradient(160deg,#d4e8ff,#a4c4ff)', images:['https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=300&h=300&fit=crop', p2(3)] },
   { id:29, name:'Stars & Bears Newborn Set',                price:'AED 325.00', imgBg:'linear-gradient(160deg,#dceeff,#acd0ff)', images:['https://images.unsplash.com/photo-1519689680058-324335c77eba?w=300&h=300&fit=crop', p2(4)] },
-  { id:30, name:'Balloon & Teddy Baby Boy Bundle',          price:'AED 289.00', imgBg:'linear-gradient(160deg,#e0ecff,#b4d0ff)', images:['https://images.unsplash.com/photo-1519689680058-324335c77eba?w=300&h=300&fit=crop', p2(5)] },
+  { id:30, name:'Balloon & Teddy Baby Boy Bundle',          price:'AED 289.00', imgBg:'linear-gradient(160deg,#e0ecff,#b4d0ff)', images:['https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=300&h=300&fit=crop', p2(5)] },
 ]
 
 export const NEWBORN_GIRL = [
   { id:31, name:'Pink Baby Balloon Stand 1',               price:'AED 275.00', imgBg:'linear-gradient(160deg,#feeaf5,#ffc2e0)', images:['https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300&h=300&fit=crop', p2(0)] },
   { id:32, name:'Pink Floral Baby Girl Balloon',           price:'AED 189.00', imgBg:'linear-gradient(160deg,#fde8f5,#ffb4e4)', images:['https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=300&h=300&fit=crop', p2(1)] },
   { id:33, name:'All Flowers and Balloons Baby Girl',      price:'AED 349.00', imgBg:'linear-gradient(160deg,#fff0fa,#ffd0ee)', images:['https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=300&h=300&fit=crop', p2(2)] },
-  { id:34, name:'Baby Girl Pink Flower & Teddy Bear',      price:'AED 229.00', imgBg:'linear-gradient(160deg,#fde0f0,#ffb0d8)', images:['https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=300&h=300&fit=crop', p2(3)] },
-  { id:35, name:'Fairy Pink Baby Girl Set',                price:'AED 299.00', imgBg:'linear-gradient(160deg,#ffe8f8,#ffc0ec)', images:['https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300&h=300&fit=crop', p2(4)] },
-  { id:36, name:'Rose Garden Baby Girl Set',               price:'AED 399.00', imgBg:'linear-gradient(160deg,#fff0f8,#ffd0e8)', images:['https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=300&h=300&fit=crop', p2(5)] },
+  { id:34, name:'Baby Girl Pink Flower & Teddy Bear',      price:'AED 229.00', imgBg:'linear-gradient(160deg,#fde0f0,#ffb0d8)', images:['https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=300&fit=crop', p2(3)] },
+  { id:35, name:'Fairy Pink Baby Girl Set',                price:'AED 299.00', imgBg:'linear-gradient(160deg,#ffe8f8,#ffc0ec)', images:['https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=300&h=300&fit=crop', p2(4)] },
+  { id:36, name:'Rose Garden Baby Girl Set',               price:'AED 399.00', imgBg:'linear-gradient(160deg,#fff0f8,#ffd0e8)', images:['https://images.unsplash.com/photo-1548263594-a71ea65a8598?w=300&h=300&fit=crop', p2(5)] },
 ]
 
 export const BIRTHDAY_BALLOONS = [

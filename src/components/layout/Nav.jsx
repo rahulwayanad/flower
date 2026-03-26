@@ -119,7 +119,7 @@ const Chevron = () => (
   </svg>
 )
 
-export default function Nav({ open }) {
+export default function Nav({ open, onClose }) {
   const [openItem, setOpenItem] = useState(null)
 
   useEffect(() => {
@@ -165,7 +165,7 @@ export default function Nav({ open }) {
                 <ul className="drop-col">
                   {item.cols.map(([label, cat]) => (
                     <li key={cat}>
-                      <Link to={`/category?cat=${cat}`} onClick={() => setOpenItem(null)}>
+                      <Link to={`/category?cat=${cat}`} onClick={() => { setOpenItem(null); onClose?.() }}>
                         {label}
                       </Link>
                     </li>
@@ -174,7 +174,7 @@ export default function Nav({ open }) {
                 <ul className="drop-col">
                   {item.cols2.map(([label, cat]) => (
                     <li key={cat}>
-                      <Link to={`/category?cat=${cat}`} onClick={() => setOpenItem(null)}>
+                      <Link to={`/category?cat=${cat}`} onClick={() => { setOpenItem(null); onClose?.() }}>
                         {label}
                       </Link>
                     </li>
@@ -184,7 +184,7 @@ export default function Nav({ open }) {
             </li>
           ))}
           <li>
-            <Link to="/category?cat=buy-balloons-dubai">Buy Balloons in Dubai</Link>
+            <Link to="/category?cat=buy-balloons-dubai" onClick={() => onClose?.()}>Buy Balloons in Dubai</Link>
           </li>
         </ul>
       </div>
