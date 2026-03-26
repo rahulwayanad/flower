@@ -1,0 +1,122 @@
+/* ── About Hero ── */
+.about-hero {
+  background: linear-gradient(135deg, #fff5f7 0%, #ffe0ec 100%);
+  padding: 44px 0 36px;
+  text-align: center;
+  border-bottom: 1px solid #f5d6e2;
+}
+.about-hero__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 10px;
+}
+.about-hero__sub {
+  font-size: .95rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.about-page {
+  padding: 52px 0 72px;
+  background: #fff;
+}
+.about-body {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.about-body p {
+  font-size: .93rem;
+  color: #444;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.about-unique { margin-top: 42px; }
+.about-unique__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+.about-unique ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.about-unique li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: .91rem;
+  color: #444;
+  line-height: 1.75;
+}
+.about-unique__dot {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--pink-d);
+  margin-top: 7px;
+}
+.about-unique li strong { color: #222; font-weight: 600; }
+
+/* ── Stats band ── */
+.about-stats {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 40px 0;
+}
+.about-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.about-stats__num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--pink);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.about-stats__label {
+  font-size: .78rem;
+  color: rgba(255,255,255,.65);
+  font-weight: 400;
+}
+
+/* ── Why choose us ── */
+.about-why {
+  background: #fafafa;
+  padding: 52px 0;
+}
+.about-why__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.about-why__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.about-why__card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 28px 22px;
+  text-align: center;
+}
+.about-why__icon { font-size: 2rem; margin-bottom: 14px; }
+.about-why__card h4 { font-size: .9rem; font-weight: 700; color: #222; margin-bottom: 8px; }
+.about-why__card p { font-size: .8rem; color: #888; line-height: 1.65; }
+
+@media (max-width: 768px) {
+  .about-stats__grid { grid-template-columns: repeat(2, 1fr); }
+  .about-why__cards { grid-template-columns: 1fr; }
+}
